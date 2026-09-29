@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# 1. Only allowlisted paths may be committed (see allowed-paths.sh).  2. templates/ is read-only.
+# Template edit override: ALLOW_TEMPLATE_EDIT=1 git commit ...
+. "$(dirname "$0")/allowed-paths.sh"
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+bad=$(printf '%s\n' "$staged" | filter_disallowed)
+if [ -n "$bad" ]; then
+  echo "pre-commit: refusing to commit files not on the allowlist (possible private data):" >&2
+  echo "$bad" | sed 's/^/  /' >&2
+  echo "Unstage with: git restore --staged <file>. Do not use git add -f. Publishing a new template? Add it to .githooks/allowed-paths.sh." >&2
+  exit 1
+fi
+[ "${ALLOW_TEMPLATE_EDIT:-}" = 1 ] && exit 0
+changed=$(git diff --cached --name-only --diff-filter=ACMRD -- templates/)
+if [ -n "$changed" ]; then
+  echo "pre-commit: templates/ is read-only. Staged changes:" >&2
+  echo "$changed" | sed 's/^/  /' >&2
+  echo "Edit your root working copy instead, or override with ALLOW_TEMPLATE_EDIT=1." >&2
+  exit 1
+fi
