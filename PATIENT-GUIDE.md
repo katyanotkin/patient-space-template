@@ -86,7 +86,11 @@ Any question the assistant asks can be skipped. Say "skip" to move on, "never mi
 
 ## Where does my information go?
 
-In your folder, in files you can open with any text editor:
+**Saved:** only in your folder, in files you can open with any text editor. Nothing is stored anywhere else by this tool.
+
+**Sent for answers:** each time the assistant looks something up to answer you, it reads the relevant files and sends that text, plus what you typed, to Anthropic's AI. That is a trip out and back for that answer. The AI's reply comes back and the assistant writes any updates to your local files.
+
+Your files:
 
 - `HEALTH.md`: your current health facts
 - `TIMELINE.md`: a dated log of what happened
