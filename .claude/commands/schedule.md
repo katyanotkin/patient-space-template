@@ -11,9 +11,9 @@ description: Schedule guidance — what's due, what's unbooked, what to do this 
      result needed before a specialist visit), long waits worth asking about
      cancellation lists or a sooner problem-focused slot.
    When the patient says they just booked or moved a visit, check it for
-   conflicts before recording it, per step 4 of `.claude/roles/organizer.md`.
+   conflicts before recording it, per step 4 of `.claude/roles/navigator.md`.
 3. For each unbooked item give who to call (from `CARE-TEAM.md`) and offer a
    call script from `templates/call-script.md`.
-4. Offer to schedule local reminders (see `tools/reminders/README.md`, if present).
+4. Offer to schedule local reminders (see `tools/reminders/README.md`; only if the tool is implemented, otherwise skip this step).
 5. Advice is about logistics and sequence, not clinical urgency. If something
    sounds urgent, run the pc red-flag screen instead.

@@ -3,7 +3,7 @@
 ## What is this?
 
 A folder on your own computer where your health information lives in plain files.
-An AI assistant (Claude) reads those files and helps you keep them organized.
+An AI assistant (Claude) reads those files and helps you keep them organized. It introduces itself as your health navigator: it helps you organize, understand, and prepare for your care, and it is not a clinician.
 
 Think of it as a well-run health binder that can also talk back.
 
@@ -13,6 +13,7 @@ Think of it as a well-run health binder that can also talk back.
 - **Getting ready for a visit.** What to say, what to ask, what to bring.
 - **Remembering what happened.** After a visit, it helps you write down what the clinician said and what you need to do next.
 - **Knowing what is coming up.** Appointments, follow-ups, and things you have not booked yet.
+- **Understanding.** Plain-language explanations of medical words, tests, and results. These are general, not about your own case; your clinician can say what they mean for you.
 - **Spotting mix-ups.** For example, the medicine list at home not matching what your doctor has.
 
 ## What does it not do?
@@ -96,17 +97,12 @@ In your folder, in files you can open with any text editor:
 
 It labels what a clinician confirmed and what you told it, and it does not save guesses as facts. Medicine changes are recorded only when your prescriber made them.
 
-## How do I get updates?
-
-Ask your helper to run `git pull` in the folder. Your own files are not touched.
-
 ## If something goes wrong
 
 - **`./init.sh` says permission denied.** Type `chmod +x init.sh`, then try again.
 - **A command like `/start` is not found.** Make sure you started `claude` from inside the project folder.
 - **You entered something wrong.** Tell the assistant. Old values are crossed out, not erased, so nothing is lost.
-- **You are unsure what a medical word means.** Ask the assistant to explain it in plain words, then confirm with your clinician.
 
 ## A last note
 
-This tool helps you show up to your care prepared. The decisions stay between you and your clinicians.
+This tool helps you keep your health information organized and understandable, so you can take a full part in your care. The decisions stay between you and your clinicians.

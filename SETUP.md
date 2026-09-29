@@ -24,5 +24,3 @@
    `.claude/roles/_TEMPLATE.md`.
 7. Use `/checkin` at the start of later sessions, `/prep` before a visit,
    `/debrief` after.
-
-To get template updates, `git pull`. Your working files are untouched.

@@ -35,6 +35,8 @@ emergency, call your local emergency number. Released under the MIT license
 ## Layout
 
 ```
+PATIENT-GUIDE.md   Plain-language guide for patients (start here if non-technical).
+SETUP.md           Setup steps for you or a helper.
 CLAUDE.md          Assistant operating rules: boundaries, interaction style, routing
 HEALTH.md          (created by init.sh from templates/) CURRENT STATE snapshot: profile, conditions, meds, allergies,
                    family history, screenings. Edited in place; history struck through.
@@ -47,6 +49,7 @@ records/           Labs, imaging, letters, forms, call scripts.
 templates/         Read-only blanks: HEALTH, TIMELINE, CARE-TEAM, APPOINTMENTS, TODO,
                    plus prep / outcome / symptom-log / call-script files.
 init.sh            Creates the root working files from templates (never overwrites).
+.claude/agents/    writer: plain-language writer for guides and onboarding text.
 .claude/roles/     pc (director) + skeptic always; optional specialist seats.
 .claude/commands/  Routines: /start /checkin /prep /debrief /schedule /medrec /log /housekeeping
 tools/reminders/   Optional: local reminder scheduling (not included yet).

@@ -12,6 +12,7 @@ Propose changes, show the diff, apply only what the patient approves.
    outcomes.
 4. `TIMELINE.md`: archive prior years to `records/timeline-<year>.md`.
 5. `CARE-TEAM.md`: update "last seen" and "doesn't have".
-6. Check no file contains a remote URL or credential; confirm the folder still
-   has no git remote.
+6. Check no file contains a remote URL or credential. Confirm the push URL of
+   every git remote is `DISABLED` and no remote other than the template's
+   `origin` exists. Never propose removing a remote.
 7. Append durable, patient-specific lessons to the relevant role's `Learnings`.

@@ -1,7 +1,7 @@
 # Panel
 
 **Always seated:** pc (director), skeptic.
-**Logistics:** `organizer` handles todo/schedule/med-list/visit-story requests and hands clinical questions to the panel.
+**Logistics:** `navigator` handles todo/schedule/med-list/visit-story/plain-language-explanation requests and hands clinical questions to the panel.
 **Specialists:** enabled per patient. Copy a file from `library/` up into
 `.claude/roles/` to enable it (or list it below and load it from `library/`).
 Delete it from the enabled list to stop seating it.

@@ -13,11 +13,16 @@ Build `visits/YYYY-MM-DD-<who>/prep.md` from `templates/visit-prep.md`.
    Ask; don't infer motives.
 4. If a concern spans domains, seat the relevant specialists via `panel.md`
    (one round, skeptic included) for concrete questions to ask.
-5. Fill "Before the day" from what is on file and ask for what is missing;
+5. Start the prep with a "story in brief": one short chronological paragraph
+   in the patient's words (what, since when, what changed, what was tried,
+   what they want from the visit). Confirmed facts and self-reported items
+   are labeled. Ask the patient to correct it. No diagnoses, no guessed causes.
+6. Fill "Before the day" from what is on file and ask for what is missing;
    skip any item the patient waves off. Keep the standard "Before you leave,
    ask" list.
-6. Produce: top 3 asks, ordered topics with plain-language descriptions,
+7. Produce: top 3 asks, ordered topics with plain-language descriptions,
    what to bring, what to say plainly even if uncomfortable, and what to defer
    to the portal or a later visit if time runs short. Fits on one page.
-7. Add a link in `APPOINTMENTS.md` and an item in `TODO.md` for anything to
-   send ahead (portal message, forms).
+8. Add a link in `APPOINTMENTS.md` and an item in `TODO.md` for anything to
+   send ahead (portal message, forms). `TODO.md` gets actions only, never
+   health facts.

@@ -16,6 +16,10 @@ and add the new one with a date, never silently delete. Chronology goes in
 | Name | Dose as prescribed | Dose actually taken | For | Prescriber | Since | Rx/OTC | Supply runs out | Refills left |
 |---|---|---|---|---|---|---|---|---|
 
+## Foods and drinks that matter to medicines
+Grapefruit, alcohol, salt substitutes, and similar (not medicines themselves).
+-
+
 ## Allergies / adverse reactions
 | Substance | Reaction | Confirmed by |
 |---|---|---|
