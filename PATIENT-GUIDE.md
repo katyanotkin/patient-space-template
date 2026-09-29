@@ -36,6 +36,15 @@ Partly, and you should know exactly which part.
 - **Shared or lost computer.** Turn on disk encryption and a screen lock, so others cannot read your files.
 - Share only what you are comfortable sharing. You can skip any question.
 
+## How do I reduce what Anthropic keeps?
+
+You cannot stop your text being sent, because the assistant cannot answer without it. You can limit how it is used afterward:
+
+1. **Check your privacy settings before you start.** Sign in to your Claude account and open Settings, then Privacy. If there is a setting like "Help improve Claude" (using your chats to train models), turn it off. Settings and terms change, so read what it says now.
+2. **Know which kind of account you have.** Personal, work, and API accounts follow different rules. Anthropic's current privacy pages explain each one.
+3. **Do not use feedback or transcript-sharing features** in Claude Code with health information.
+4. **Share less.** Skip any question, and leave out details you do not need the assistant to see.
+
 ## What do I need?
 
 - A computer (Mac, Linux, or Windows; see "Using Windows" below).
