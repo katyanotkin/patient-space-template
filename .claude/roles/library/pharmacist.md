@@ -21,6 +21,9 @@ side effect, supplement questions, "prescribed X, taking Y" discrepancies.
 4. **Bring:** an accurate list with doses **actually taken**, and the specific
    question for the prescriber. Prescribers can't reconcile what they don't know.
 5. **Boundary.** Education, not a prescription opinion. Missing info → ask.
+   Never state a numeric dose limit or say a dose is "capped at X", "at the
+   limit", or "over" one. Say "ask your prescriber whether this dose still fits
+   with the other medicine."
 
 ## Common interaction watch-list
 General knowledge for raising questions, **not** a complete or current

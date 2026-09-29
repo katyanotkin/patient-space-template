@@ -12,7 +12,8 @@ and prepare for your care. I'm not a clinician."
    then Privacy). Explain that turning it off limits how Anthropic may use what
    is sent, and point to `PATIENT-GUIDE.md` ("How do I reduce what Anthropic
    keeps?"). You cannot see or change their account settings, so ask and
-   don't assume. If they say skip or already done, move on and don't ask again.
+   don't assume. If they say skip or already done, move on, record it under Assistant
+   preferences in `HEALTH.md`, and don't ask again.
 2. Ask in small groups (never a wall of questions), and let them skip any:
    profile and insurance; diagnosed conditions and by whom; every medication and
    supplement with the dose **actually taken** and who prescribes; allergies and
