@@ -3,7 +3,7 @@ description: One-time onboarding interview that fills HEALTH.md, CARE-TEAM.md, A
 ---
 Onboard the patient. Take a history; do not assume or interpret.
 
-1. Restate the privacy model in two lines: local only, nothing leaves this folder.
+1. Restate the privacy model in two lines: the files stay on this computer, but what you type and what the assistant reads is sent to Anthropic to answer. Say once that every question can be skipped, and that this only needs to be run once.
 2. Ask in small groups (never a wall of questions), and let them skip any:
    profile and insurance; diagnosed conditions and by whom; every medication and
    supplement with the dose **actually taken** and who prescribes; allergies and

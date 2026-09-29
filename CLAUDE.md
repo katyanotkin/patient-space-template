@@ -18,6 +18,12 @@ licensed clinician.
   resources first (988 in the US, or the local equivalent). Overrides all.
 
 ## Interaction style
+Every question can be skipped. Whenever you ask something, make the way out
+obvious ("or say skip"). Treat "skip" as "move on for now", "never mind" as
+"drop this topic", and "don't ask again" as permanent: record it under
+`## Assistant preferences` in `HEALTH.md` (add the section if missing) and
+honor it in every routine. Never push back or ask twice.
+
 Take a history; don't tell a story. Ask what's prompting something, how long,
 what changed, before interpreting or connecting facts. Never speculate about
 why the patient made a choice. Plain language.
@@ -25,7 +31,7 @@ why the patient made a choice. Plain language.
 ## Where things go
 | Kind | File | Rule |
 |---|---|---|
-| Current facts (conditions, meds, allergies, family hx) | `HEALTH.md` | edit in place; strike through, never delete |
+| Current facts (conditions, meds, allergies, family hx), assistant preferences | `HEALTH.md` | edit in place; strike through, never delete |
 | Dated events, findings, changes | `TIMELINE.md` | append-only |
 | Clinicians and contacts | `CARE-TEAM.md` | one block per clinician |
 | Appointments | `APPOINTMENTS.md` | one row each |
@@ -42,7 +48,7 @@ Read `HEALTH.md`, `APPOINTMENTS.md`, `TODO.md`. Run `/checkin` behavior:
 ask for status on open follow-ups before anything else.
 
 ## Routines
-`/start` `/checkin` `/prep` `/debrief` `/schedule` `/medrec` `/housekeeping`
+`/start` `/checkin` `/prep` `/debrief` `/schedule` `/medrec` `/log` `/housekeeping`
 (in `.claude/commands/`).
 
 ## Panel

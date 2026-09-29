@@ -20,22 +20,26 @@ Think of it as a well-run health binder that can also talk back.
 - It does not diagnose you.
 - It does not tell you to start, stop, or change a medicine. For that, ask your prescriber (the person who wrote the prescription).
 - It does not replace your doctor, nurse, or pharmacist.
+- It can make mistakes. Confirm anything important with a clinician.
 - It is not for emergencies. If you think you are in danger, call your local emergency number.
-- If you ever think about hurting yourself, contact a crisis line right away (988 in the US). The assistant will point you there first.
+- If you ever think about hurting yourself, contact a crisis line right away (988 in the US, or your local crisis line). The assistant will point you there first.
 
 ## Is my information private?
 
 Partly, and you should know exactly which part.
 
-- **Your files stay on your computer.** They are not uploaded anywhere by this tool.
-- **This copy cannot send them to GitHub.** It is set up so it cannot push anything back.
-- **What you type to the assistant goes to the AI company** (Anthropic) so it can answer. Read their data terms if that matters to you.
+- **Your files stay on your computer.** This tool does not upload them or sync them anywhere.
+- **What you type, and the contents of the files the assistant reads, are sent to Anthropic** so it can answer. That includes things like `HEALTH.md` and your visit notes. Read their data terms if that matters to you.
+- **It is set up to block accidental uploads to GitHub.** That is a safety net, not a guarantee. Do not add other remotes or force-add files.
+- **Cloud-synced folders.** Do not put this folder in iCloud, Dropbox, OneDrive or Google Drive unless you are comfortable with your records being copied there.
+- **Shared or lost computer.** Turn on disk encryption and a screen lock, so others cannot read your files.
 - Share only what you are comfortable sharing. You can skip any question.
 
 ## What do I need?
 
 - A computer (Mac, Linux, or Windows; see "Using Windows" below).
-- Claude Code, the program that runs the assistant.
+- Claude Code, the program that runs the assistant. It needs an Anthropic account and a plan that includes Claude Code.
+- git, a free tool that copies the project to your computer. Mac and Linux often have it already; type `git --version` to check. Windows users install it below.
 - A helper for the first setup, if you do not use a terminal (the text window where you type commands). It takes about 10 minutes. After that, you talk to the assistant in plain sentences.
 
 ## Using Windows
@@ -52,13 +56,14 @@ We have not tested these steps on Windows. If something does not work, ask a hel
 Ask your helper to do these with you.
 
 1. Copy the project to your computer: `git clone <the link you were given>`
+   The link looks like `https://github.com/some-name/patient-space-template.git`.
 2. Open the new folder in the terminal.
 3. Type `./init.sh` and press Enter.
-   This creates your personal files, blank and ready. It also makes sure nothing can be sent back out.
+   This creates your personal files, blank and ready. It also sets up protection against accidental uploads.
 4. Type `claude` and press Enter to start the assistant.
 5. Type `/start`.
 
-`/start` is an interview. The assistant asks about your health history the way a clinician would, one question at a time. Skip anything you do not want to record.
+`/start` is an interview. You only need to run it once. The assistant asks about your health history the way a clinician would, one question at a time. Skip anything you do not want to record.
 
 ## How do I use it day to day?
 
@@ -70,10 +75,13 @@ Type these commands in the assistant. Each does one job.
 | `/schedule` | Any time | Tells you what is due and what is not booked |
 | `/prep` | Before a visit | Helps you plan what to say and ask |
 | `/debrief` | After a visit | Captures what happened and what to do next |
+| `/log` | When a symptom happens | Adds a quick entry to a symptom log for your next visit |
 | `/medrec` | Any time | Checks your medicine list for mismatches to show your prescriber |
 | `/housekeeping` | About monthly | Tidies old items away |
 
 You can also just talk to it: "My knee has hurt for two weeks. What should I tell my doctor?" It will ask you questions first, then help you prepare.
+
+Any question the assistant asks can be skipped. Say "skip" to move on, "never mind" to drop the topic, or "don't ask again" and it will remember.
 
 ## Where does my information go?
 
@@ -86,7 +94,7 @@ In your folder, in files you can open with any text editor:
 - `TODO.md`: things to do
 - `visits/` and `records/`: visit notes, lab results, letters
 
-The assistant only records things a clinician has confirmed, and medicine changes made by your prescriber. It does not save guesses as facts.
+It labels what a clinician confirmed and what you told it, and it does not save guesses as facts. Medicine changes are recorded only when your prescriber made them.
 
 ## How do I get updates?
 

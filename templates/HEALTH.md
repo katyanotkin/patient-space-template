@@ -13,8 +13,8 @@ and add the new one with a date, never silently delete. Chronology goes in
 |---|---|---|---|
 
 ## Medications and supplements (what is actually taken)
-| Name | Dose as prescribed | Dose actually taken | For | Prescriber | Since | Rx/OTC |
-|---|---|---|---|---|---|---|
+| Name | Dose as prescribed | Dose actually taken | For | Prescriber | Since | Rx/OTC | Supply runs out | Refills left |
+|---|---|---|---|---|---|---|---|---|
 
 ## Allergies / adverse reactions
 | Substance | Reaction | Confirmed by |
@@ -32,4 +32,8 @@ Each has: what, since when, what's been tried, who has (not) seen it.
 -
 
 ## Patterns noticed (only once recurred)
+-
+
+## Assistant preferences
+Topics the patient chose to skip or not be asked about again. The assistant honors these.
 -

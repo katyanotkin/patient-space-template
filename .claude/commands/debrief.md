@@ -13,4 +13,7 @@ argument-hint: <clinician or date>
    `TIMELINE.md`; next visit → `APPOINTMENTS.md`; actions → `TODO.md`; new
    records → `records/`; "didn't have" updates → `CARE-TEAM.md`.
 5. Check that the visit's prep questions were answered; carry the rest forward.
-6. Run `/medrec` if any medication changed.
+6. For each test or referral ordered, ask how long results should take. Add
+   "waiting on results" to `TODO.md` with the date drawn and the date to
+   follow up. Ask if the "Before you leave, ask" items were covered.
+7. Run `/medrec` if any medication changed.

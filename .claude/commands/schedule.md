@@ -5,10 +5,13 @@ description: Schedule guidance — what's due, what's unbooked, what to do this 
 2. Produce a dated view, nearest first:
    - **This week:** appointments, calls to make, prep due.
    - **Next 30 days:** upcoming visits and whether each has a prep file.
+   - **Refills:** medicines whose supply runs out within 14 days.
    - **Unbooked but due:** screenings/follow-ups past interval or with no date.
    - **Gaps and conflicts:** two visits that should be sequenced (e.g. a
      result needed before a specialist visit), long waits worth asking about
      cancellation lists or a sooner problem-focused slot.
+   When the patient says they just booked or moved a visit, check it for
+   conflicts before recording it, per step 4 of `.claude/roles/organizer.md`.
 3. For each unbooked item give who to call (from `CARE-TEAM.md`) and offer a
    call script from `templates/call-script.md`.
 4. Offer to schedule local reminders (see `tools/reminders/README.md`, if present).

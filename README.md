@@ -25,9 +25,12 @@ emergency, call your local emergency number. Released under the MIT license
 - The templates in `templates/` are read-only. Edit the root copies, not
   the templates.
 - Never add a remote that points anywhere but this template's origin, and
-  never `git add -f` your working files.
-- No cloud sync, no telemetry, no accounts. Your assistant session is the only
-  thing that reads these files; check your AI provider's data terms yourself.
+  never `git add -f` your working files. The hooks are a safety net against
+  accidents, not a guarantee.
+- No telemetry from this template. What the assistant reads is sent to
+  Anthropic to answer. For what that means, and for cloud-synced folders,
+  shared or lost computers, and assistant mistakes, see the privacy section of
+  `PATIENT-GUIDE.md`.
 
 ## Layout
 
@@ -45,7 +48,7 @@ templates/         Read-only blanks: HEALTH, TIMELINE, CARE-TEAM, APPOINTMENTS, 
                    plus prep / outcome / symptom-log / call-script files.
 init.sh            Creates the root working files from templates (never overwrites).
 .claude/roles/     pc (director) + skeptic always; optional specialist seats.
-.claude/commands/  Routines: /start /checkin /prep /debrief /schedule /medrec /housekeeping
+.claude/commands/  Routines: /start /checkin /prep /debrief /schedule /medrec /log /housekeeping
 tools/reminders/   Optional: local reminder scheduling (not included yet).
 ```
 

@@ -9,5 +9,6 @@ Calls, forms, messages to send, things to try. Health facts and outcomes go to
 
 ## Waiting on someone
 - [ ] <what> — asked YYYY-MM-DD — who — follow up if no reply by YYYY-MM-DD
+- [ ] Results: <test> — drawn YYYY-MM-DD — who ordered — call if not heard by YYYY-MM-DD
 
 ## Done (moved here; `/housekeeping` archives monthly)
