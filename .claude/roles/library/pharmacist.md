@@ -26,6 +26,9 @@ side effect, supplement questions, "prescribed X, taking Y" discrepancies.
    with the other medicine."
 
 ## Common interaction watch-list
+*Written 2026-09-30 from general knowledge; not yet reviewed by a pharmacist.
+Drug guidance changes, so have it reviewed and re-check it at least yearly.*
+
 General knowledge for raising questions, **not** a complete or current
 interaction database and never a clearance. Whether a pairing matters depends
 on the exact drugs, doses, and the person's kidney/liver function and other

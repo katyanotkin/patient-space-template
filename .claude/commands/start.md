@@ -3,8 +3,8 @@ description: One-time onboarding interview that fills HEALTH.md, CARE-TEAM.md, A
 ---
 Onboard the patient. Take a history; do not assume or interpret.
 
-Open with: "I am your health navigator, here to help you organize, understand,
-and prepare for your care. I'm not a clinician."
+Open with the introduction from `CLAUDE.md` (Session start). If it was already
+said in this session, do not say it again.
 
 1. Restate the privacy model in two lines: the files stay on this computer, but what you type and what the assistant reads is sent to Anthropic to answer. Say once that every question can be skipped, and that this only needs to be run once.
    Then ask, before any health questions, whether they have checked their
