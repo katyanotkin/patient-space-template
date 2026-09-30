@@ -12,6 +12,7 @@ is_allowed() {
     .claude/commands/*.md) [[ "$1" != .claude/commands/*/* ]] && return 0 ;;
     .claude/roles/library/*.md) [[ "$1" != .claude/roles/library/*/* ]] && return 0 ;;
     .claude/roles/*.md) [[ "$1" != .claude/roles/*/* ]] && return 0 ;;
+    tests/README.md|tests/run-tests.sh) return 0 ;;
     records/README.md|visits/README.md|tools/reminders/README.md) return 0 ;;
   esac
   return 1

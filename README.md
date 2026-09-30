@@ -52,6 +52,7 @@ init.sh            Creates the root working files from templates (never overwrit
 .claude/agents/    writer: plain-language writer for guides and onboarding text.
 .claude/roles/     pc (director) + skeptic always; optional specialist seats.
 .claude/commands/  Routines: /start /checkin /prep /debrief /schedule /medrec /log /housekeeping
+tests/             Automatic safety checks (see tests/README.md). Optional to run.
 tools/reminders/   Optional: local reminder scheduling (not included yet).
 ```
 

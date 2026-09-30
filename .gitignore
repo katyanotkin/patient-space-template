@@ -34,6 +34,10 @@
 !records/README.md
 !visits/
 !visits/README.md
+!tests/
+!tests/README.md
+!tests/run-tests.sh
+
 !tools/
 !tools/reminders/
 !tools/reminders/README.md
